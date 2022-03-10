@@ -1,0 +1,38 @@
+
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+#heading{
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+ text-align: center;
+}
+
+#details{
+  font-size: 15px;
+  color: black;
+}
+#price{
+  text-align: center;
+}
